@@ -1,0 +1,42 @@
+.content{
+    padding: 20px;
+}
+.btn {
+    padding: 10px;
+    border: none;
+    
+    text-transform: uppercase;
+    width: 80px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.addBtn{
+    background: #7ab97a;
+    color: #fff;
+   
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 40% 40% auto;    
+    text-transform: uppercase;
+    color: #808080;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.grid-item{ 
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin-left: 10px;
+    
+}
+
+.delBtn{
+    background: #fa9c9c;
+    color:#000; 
+   
+}
