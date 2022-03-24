@@ -1,0 +1,53 @@
+.btn {
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    width: 80px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.backBtn{
+    background: #ccb1b1;
+    color: rgb(0, 0, 0);
+   
+}
+.form-container {
+    margin-top: 30px;
+}
+
+.form-label {
+    color: #808080;
+    font-size: 1.15rem;
+    margin-right: 15px;
+}
+
+.form-input {
+    width: 300px;
+    min-width: 100px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+.info-container {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.subscriber-add-heading {
+    color:  #0a4f75;
+    font-weight: 600;
+}
+
+.subscriber-info {
+    color: #808080;
+}
+
+.addBtn{
+    background: #7ab97a;
+    color: #fff;
+}
