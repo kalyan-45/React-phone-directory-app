@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import AddSubscriber from './AddSubscriber';
+import PhoneDirectory from './PhoneDirectory';
 
 ReactDOM.render(
-    <AddSubscriber />,
+    <PhoneDirectory />,
   document.getElementById('root')
 );
 
