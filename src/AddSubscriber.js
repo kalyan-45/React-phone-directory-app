@@ -1,38 +1,63 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from './Common/Header';
 import './Common/common.css';
 import './Styles/AddSubscriber.css'
 
 class AddSubscriber extends React.Component {
-    constructor(){
-        super();
+    
+    constructor(props){
+        super(props);
         this.state = {
-            id : 0,
-            name : '',
-            phone : ''
+            subscribersList: [
+                {
+                  id: "1",
+                  name: "Kalyan",
+                  phone: "9637442375",
+                },
+                {
+                  id: "2",
+                  name: "Daya",
+                  phone: "9359040951",
+                },
+        
+                {
+                  id: "3",
+                  name: "Prashant",
+                  phone: "8308310901",
+                },
+        
+                {
+                  id: "4",
+                  name: "Sushant",
+                  phone: "8308310902",
+                },
+              ],
         };
     }
-
     inputChangedHandler = (event) => {
         const newState = this.state;
         newState[event.target.name] = event.target.value;
         this.setState(newState); 
-        console.log(newState);
+        
     } 
 
     onFormSubmit = (event) => {
         event.preventDefault();
+        
+
         this.props.addSubscriberHandler(this.state);
+        
     }
     
     
     render() {
-        const {name, phone} = this.state;
+        const {name, phone} = this.state; 
         return (
             <div className="component-body">
                 <Header heading = "Add Subscriber" />
                 <div className="component-body-container">
-                    <button className="btn backBtn">Back</button>
+                <Link to="/"><button className="btn backBtn">Back</button></Link>
 
                     <form action="" className="form-container" onSubmit={this.onFormSubmit.bind(this)}>
                         <label htmlFor="name" className="form-label" >Name: </label>
